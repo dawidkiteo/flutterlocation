@@ -25,9 +25,13 @@ dependencies:
   flutter:
     sdk: flutter
   location_platform_interface:
-    path: ../location_platform_interface
+    git:
+      url: https://github.com/dawidkiteo/flutterlocation.git
+      path: location_platform_interface
   location_web:
-    path: ../location_web
+    git:
+      url: https://github.com/dawidkiteo/flutterlocation.git
+      path: location_web
   meta: ^1.0.5
 
 dev_dependencies:

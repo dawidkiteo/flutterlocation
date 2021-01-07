@@ -92,6 +92,8 @@
         if (self.applicationHasLocationBackgroundMode) {
             self.clLocationManager.allowsBackgroundLocationUpdates = enable;
             self.clLocationManager.showsBackgroundLocationIndicator = enable;
+            self.clLocationManager.pausesLocationUpdatesAutomatically = false;
+            self.clLocationManager.activityType = CLActivityTypeFitness;
             result(enable ? @1 : @0);
         } else {
             result(@0);
